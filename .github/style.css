@@ -77,9 +77,11 @@ p {
 
 h1 {
   text-align: center;
-  color: white;
   font-size: 80px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  animation-name: title;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
  
 }
 
@@ -141,14 +143,36 @@ div.sticky {
 }
 
 
-h1 ani {
+h1 {
+  animation-name: title;
   animation-iteration-count: infinite;
-  animation-name: ani;
-  background-color: white;
+  animation-duration: 3s;
 }
 
-@keyframes ani {
-  0% {background-color: white;}
-  50% {background-color: #ecd2a5;}
-  100% {background-color: burlywood;}
+@keyframes title {
+  0% {color: rgb(234, 223, 205);}
+  25% {color: #f7ead4;}
+  50% {color: rgb(237, 205, 162);}
+  75% {color: #d8b171;}
+  100% {color: #bd9a62;}
+}
+
+button {
+  animation-name: wow;
+  animation-iteration-count: infinite;
+  animation-duration: 4s;
+}
+
+@keyframes wow {
+  0% {background-color: rgb(234, 223, 205); margin-right:  ;}
+  25% {background-color: #f7ead4;}
+  50% {background-color: rgb(237, 205, 162);margin-left: 50px;} 
+  75% {background-color: #f7ead4;}
+  100% {background-color: #ecd2a5; margin-left: 0px;}
+}
+
+#corners {
+  border: 30px;
+  background: #ecd2a5;
+  padding: 10px;
 }
